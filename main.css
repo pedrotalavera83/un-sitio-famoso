@@ -1,0 +1,1049 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    /* ~ 1rem */
+}
+
+:root {
+    --pin_width: 15.625rem;
+    --row_increment: 0.625rem;
+    --pin_radius: 1rem;
+    --pin_radius2: 50rem;
+    /* Factores de escala */
+    --pin_small: 26;
+    --pin_medium: 34;
+    --pin_large: 46;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    background-color: cornflowerblue;
+}
+
+nav {
+    height: 5rem;
+    background-color: white;
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: space-evenly;
+}
+
+.navbar-navegacion {
+    flex-grow: .3;
+    min-width: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    /* min-width: 3rem; */
+    /* background-color: burlywood; */
+    align-content: center;
+    align-items: center;
+    /* border-radius: var(--pin_radius2); */
+
+}
+
+.logo-pin {
+    flex-grow: 1;
+
+}
+
+.boton-inicio {
+    flex-grow: 1;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    border-radius: var(--pin_radius2);
+    /* height: 100vh; */
+    width: 10%;
+
+}
+
+.explorar {
+    flex-grow: 1;
+}
+
+.crear {
+    flex-grow: 1;
+}
+
+.navbar-perfil {
+    flex-grow: .3;
+    min-width: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    /* min-width: 3rem; */
+    align-content: center;
+    align-items: center;
+    /* border-radius: var(--pin_radius2); */
+}
+
+.notif {
+    flex-grow: 1;
+
+}
+ /* .notif img {
+    object-fit: cover;
+    width:100%;
+    height:100%;
+ } */
+
+
+
+
+
+.navbar-busqueda {
+    flex-grow: 1;
+    min-width: 3rem;
+    background-color: rgba(238, 244, 248, 0.907);
+    display: flex;
+    align-content: center;
+    /* flex-wrap: wrap; */
+    border-radius: var(--pin_radius2);
+}
+
+
+
+.pin_contenedor {
+    background-color: white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--pin_width));
+    grid-auto-rows: var(--row_increment);
+    justify-content: center;
+}
+
+.pin {
+    position: relative;
+    margin: 1rem 0.8rem;
+    border-radius: var(--pin_radius);
+    background-color: darkblue;
+}
+
+/* imagen */
+.pin_contenido1 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones1 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones1:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido2 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones2 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones2:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido3 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones3 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones3:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido4 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones4 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones4:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido5 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones5 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones5:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido6 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones6 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones6:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido7 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones7 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones7:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido8 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones8 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones8:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido9 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones9 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones9:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido10 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones10 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones10:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido11 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones11 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones11:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido12 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones12 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones12:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido13 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones13 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones13:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido14 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones14 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones14:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido15 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones15 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones15:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido16 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones16 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones16:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido17 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones17 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones17:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido18 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones18 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones18:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido19 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones19 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones19:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido20 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones20 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones20:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido21 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones21 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones21:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido22 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones22 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones22:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido23 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones23 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones23:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+/* imagen */
+.pin_contenido24 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/85837621/display_1500/stock-photo-cyclist-on-the-top-of-a-hill-85837621.jpg);
+    background-size: cover;
+    border-radius: var(--pin_radius);
+    text-align: center;
+}
+
+/* botones en el hover (al pasar el raton encima) */
+.pin_botones24 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: var(--pin_radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Totalmente invisible */
+    opacity: 0;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.pin_botones24:hover {
+    /* Totalmente visible */
+    opacity: 0.3;
+}
+
+.pin_pequenio {
+    grid-row-end: span var(--pin_small);
+}
+
+.pin_mediano {
+    grid-row-end: span var(--pin_medium);
+}
+
+.pin_grande {
+    grid-row-end: span var(--pin_large);
+}
+
+/* Estilos para el input personalizado */
+
+.navbar_input_search {
+    /* margin-inline: 0.8rem; */
+    padding-inline-start: 0.8rem;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(238, 244, 248, 0.907);
+    border-radius: var(--pin_radius2);
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.navbar_input_search>svg {
+    height: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navbar_input_search>input {
+    height: 2rem;
+    flex-grow: 3;
+    margin-inline-end: 1rem;
+    margin-inline-start: 0.8rem;
+    background-color: transparent;
+    border-style: none;
+}
+
+.navbar_input_search>input:focus-visible {
+    outline: none;
+}
+
+nav ul {
+
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.input-icon {
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
